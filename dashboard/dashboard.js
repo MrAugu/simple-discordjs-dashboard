@@ -181,9 +181,12 @@ module.exports = async (client) => {
           storedSettings = await GuildSettings.findOne({ gid: guild.id });
         }
       
+        // We set the prefix of the server settings to the one that was sent in request from the form.
         storedSettings.prefix = req.body.prefix;
+        // We save the settings.
         await storedSettings.save().catch(() => {});
 
+        // We render the template with an alert text which confirms that settings have been saved.
         renderTemplate(res, req, "settings.ejs", { guild, settings: storedSettings, alert: "Your settings have been saved." });
     });
 
