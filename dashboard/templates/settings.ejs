@@ -1,0 +1,14 @@
+<%- include("partials/header", { bot, user, path, title: "Home" }) %>
+
+<% if (alert) { %>
+  <p><%= alert %></p><br>
+<% } %>
+
+<h1><%= guild.name %></h1>
+<form style="margin-top: 1em;" method="POST"> <!-- method="post" tiggers a POST request to the same url with the body of the form control inputs -->
+  <p>Prefix:</p>
+  <input type="text" name="prefix" value="<%= settings.prefix %>" placeholder="Your prefix."><br><br>
+  <button type="submit">Save Settings</button>
+</form>
+
+<%- include("partials/footer") %>
