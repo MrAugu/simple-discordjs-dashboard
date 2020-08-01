@@ -11,6 +11,7 @@
   <% } else { %>
     <a type="button" href="/login">Login</a><br>
   <% } %>
-  <% if(title !== "Dashboard") { %>
-    <a type="button" href="/dashboard">Back to dashboard</a><br><hr>
+  <% if(user && title === "Home") { %>
+    <a type="button" href="/dashboard">Back to dashboard</a><br>
   <% } %>
+  <%- title === "Dashboard" ? "" : "<hr>" %>
