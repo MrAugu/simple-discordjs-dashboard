@@ -28,3 +28,4 @@ npm install
 ```
 node index
 ```
+[![Run on Repl.it](https://repl.it/badge/github/MrAugu/simple-discordjs-dashboard)](https://repl.it/github/MrAugu/simple-discordjs-dashboard)
