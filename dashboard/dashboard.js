@@ -144,7 +144,7 @@ module.exports = async (client) => {
     // We validate the request, check if guild exists, member is in guild and if member has minimum permissions, if not, we redirect it back.
     const guild = client.guilds.cache.get(req.params.guildID);
     if (!guild) return res.redirect("/dashboard");
-    const member = guild.members.cache.get(req.user.id);
+    const member = await guild.members.fetch(req.user.id);
     if (!member) return res.redirect("/dashboard");
     if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
 
@@ -167,7 +167,7 @@ module.exports = async (client) => {
         // We validate the request, check if guild exists, member is in guild and if member has minimum permissions, if not, we redirect it back.
         const guild = client.guilds.cache.get(req.params.guildID);
         if (!guild) return res.redirect("/dashboard");
-        const member = guild.members.cache.get(req.user.id);
+        const member = await guild.members.fetch(req.user.id);
         if (!member) return res.redirect("/dashboard");
         if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
         // We retrive the settings stored for this guild.
