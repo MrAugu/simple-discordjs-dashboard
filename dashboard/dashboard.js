@@ -10,7 +10,6 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const Discord = require("discord.js");
 const GuildSettings = require("../models/settings");
-const Url = require("url");
 
 // We instantiate express app and the session store.
 const app = express();
@@ -34,25 +33,28 @@ module.exports = async (client) => {
   var domain;
   
   try {
-    const domainUrl = new Url(config.domain);
+    const domainUrl = new URL(config.domain);
     domain = {
       host: domainUrl.hostname,
       protocol: domainUrl.protocol
     };
   } catch (e) {
-    throw new UncaughtException("Invalid domain specific in the config file.");
+    console.log(e);
+    throw new TypeError("Invalid domain specific in the config file.");
   }
   
   if (config.usingCustomDomain) {
-    callbackUrl =  `${domain.protocol}://${domain.host}/callback`
+    callbackUrl =  `${domain.protocol}//${domain.host}/callback`
   } else {
-    callbackUrl = `${domain.protocol}://${domain.host}${config.port == 80 ? "" : `:${config.port}`}/callback`;
+    callbackUrl = `${domain.protocol}//${domain.host}${config.port == 80 ? "" : `:${config.port}`}/callback`;
   }
   
   // This line is to inform users where the system will begin redirecting the users.
   // And can be removed.
-  console.log(`Info: Make sure you have added the following url to the discord's OAuth callback url section in the dev. portal: ${callbackUrl}`);
-  
+  console.log("===");
+  console.log(`Info: Make sure you have added the following url to the discord's OAuth callback url section in the developer portal:\n${callbackUrl}`);
+  console.log("===");
+
   // We set the passport to use a new discord strategy, we pass in client id, secret, callback url and the scopes.
   /** Scopes:
    *  - Identify: Avatar's url, username and discriminator.

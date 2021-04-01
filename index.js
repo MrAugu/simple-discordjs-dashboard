@@ -9,7 +9,16 @@ const GuildSettings = require("./models/settings");
 const Dashboard = require("./dashboard/dashboard");
 
 // We instiate the client and connect to database.
-const client = new Discord.Client();
+const client = new Discord.Client({
+  ws: {
+    intents: [
+      "GUILDS",
+      "GUILD_MEMBERS",
+      "GUILD_MESSAGES"
+    ]
+  }
+});
+
 mongoose.connect(config.mongodbUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -17,7 +26,15 @@ mongoose.connect(config.mongodbUrl, {
 client.config = config;
 
 // We listen for client's ready event.
-client.on("ready", () => {
+client.on("ready", async () => {
+  console.log("Fetching members...");
+
+  for (const [id, guild] of client.guilds.cache) {
+    await guild.members.fetch();
+  }
+
+  console.log("Fetched members.");
+
   console.log(`Bot is ready. (${client.guilds.cache.size} Guilds - ${client.channels.cache.size} Channels - ${client.users.cache.size} Users)`);
   Dashboard(client);
 });
