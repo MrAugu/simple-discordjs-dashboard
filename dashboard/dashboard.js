@@ -10,6 +10,7 @@ const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const Discord = require("discord.js");
 const GuildSettings = require("../models/settings");
+const Url = require("url");
 
 // We instantiate express app and the session store.
 const app = express();
@@ -25,6 +26,33 @@ module.exports = async (client) => {
   passport.serializeUser((user, done) => done(null, user));
   passport.deserializeUser((obj, done) => done(null, obj));
 
+  // Validating the url by creating a new instance of an Url then assign an object with the host and protocol properties.
+  // If a custom domain is used, we take the protocol, then the hostname and then we add the callback route.
+  // Ex: Config key: https://localhost/ will have - hostname: localhost, protocol: http
+  
+  var callbackUrl;
+  var domain;
+  
+  try {
+    const domainUrl = new Url(config.domain);
+    domain = {
+      host: domainUrl.hostname,
+      protocol: domainUrl.protocol
+    };
+  } catch (e) {
+    throw new UncaughtException("Invalid domain specific in the config file.");
+  }
+  
+  if (config.usingCustomDomain) {
+    callbackUrl =  `${domain.protocol}://${domain.host}/callback`
+  } else {
+    callbackUrl = `${domain.protocol}://${domain.host}${config.port == 80 ? "" : `:${config.port}`}/callback`;
+  }
+  
+  // This line is to inform users where the system will begin redirecting the users.
+  // And can be removed.
+  console.log(`Info: Make sure you have added the following url to the discord's OAuth callback url section in the dev. portal: ${callbackUrl}`);
+  
   // We set the passport to use a new discord strategy, we pass in client id, secret, callback url and the scopes.
   /** Scopes:
    *  - Identify: Avatar's url, username and discriminator.
@@ -33,7 +61,7 @@ module.exports = async (client) => {
   passport.use(new Strategy({
     clientID: config.id,
     clientSecret: config.clientSecret,
-    callbackURL: `${config.domain}${config.port == 80 ? "" : `:${config.port}`}/callback`,
+    callbackURL: callbackUrl,
     scope: ["identify", "guilds"]
   },
   (accessToken, refreshToken, profile, done) => { // eslint-disable-line no-unused-vars
