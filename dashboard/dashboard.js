@@ -94,6 +94,12 @@ module.exports = async (client) => {
     extended: true
   }));
 
+  
+  // We host all of the files in the assets using their name in the root address.
+  // A style.css file will be located at http://<your url>/style.css
+  // You can link it in any template using src="/assets/filename.extension"
+  app.use("/", express.static(path.resolve(`${dataDir}${path.sep}assets`)));
+  
   // We declare a renderTemplate function to make rendering of a template in a route as easy as possible.
   const renderTemplate = (res, req, template, data = {}) => {
     // Default base data which passed to the ejs template by default. 
