@@ -1,0 +1,5 @@
+/* Style.css file is linked in the header template, therefore is applied to every page. */
+
+body {
+  background-color: #ccc;
+}
