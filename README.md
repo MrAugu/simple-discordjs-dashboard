@@ -2,12 +2,6 @@
 Is a very simple, no-css bot dashboard.
 Made with Express, MongoDB, Discord.JS.
 
-Donate any amount of money to support this project, using paypal.
-
-<a href="https://paypal.me/mraugu"><img width="50%" align="left" src="https://github.com/MrAugu/MrAugu/blob/master/donate.png"></a>
-
-
-
 ## Discord Server
 
 You can join my discord server [here](https://discord.gg/rk7cVyk).
