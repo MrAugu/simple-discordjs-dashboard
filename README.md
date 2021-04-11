@@ -1,6 +1,7 @@
 # Discord Bot Dashboard
-Is a very simple, no-css bot dashboard.
-Made with Express, MongoDB, Discord.JS.
+- ~~Is a very simple, no-css bot dashboard.~~
+- It has a lightweight design made with Bootsrap to be pleasant to the eye, the old design cand be found in the `no-style` branch of the repository, if you are curious check that out.
+- Made with Express, MongoDB, Discord.JS.
 
 ## Discord Server
 
