@@ -1,14 +1,21 @@
 <%- include("partials/header", { bot, user, path, title: "Home" }) %>
 
-<% if (alert) { %>
-  <p><%= alert %></p><br>
-<% } %>
-
-<h1><%= guild.name %></h1>
-<form style="margin-top: 1em;" method="POST"> <!-- method="post" triggers a POST request to the same url with the body of the form control inputs -->
-  <p>Prefix:</p>
-  <input type="text" name="prefix" value="<%= settings.prefix %>" placeholder="Your prefix."><br><br>
-  <button type="submit">Save Settings</button>
-</form>
+<div class="container-sm center" style="margin-top: 30px;">
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <% if (alert) { %>
+      <div class="alert alert-success" role="alert">
+        <%= alert %>
+      </div>
+    <% } %>
+    <h1><%= guild.name %></h1>
+    <hr>
+    <form method="POST">
+      <p class="h5" style="margin-bottom: 0.5rem; margin-top: 10px;">Prefix:</p>
+      <p style="font-style: italic;" class="disabled">The prefix that is added to discord messages in order to invoke commands.</p>
+      <input type="text" class="form-control" name="prefix" value="<%= settings.prefix %>" placeholder="Your prefix.">
+      <br><button type="submit" class="btn btn-secondary">Save Settings</button>
+    </form>
+  </div>
+</div>
 
 <%- include("partials/footer") %>
