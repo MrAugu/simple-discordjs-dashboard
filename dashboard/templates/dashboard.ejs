@@ -15,7 +15,7 @@
           <a href="/dashboard/<%- guild.id %>" class="btn btn-success">Edit Settings</a>
         <% } else { %>
           <p class="card-text">Invite the bot to <%= guild.name %> in order to their this server's settings via the dashboard by clicking the button below.</p>
-          <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&guild_id=${guild.id}&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}${bot.config.port == 80 ? "" : `:${bot.config.port}`}/callback`)}`  %></a>" class="btn btn-primary">Invite Bot</a>
+          <a href="<%= `https://discordapp.com/oauth2/authorize?client_id=${bot.user.id}&scope=bot&guild_id=${guild.id}&response_type=code&redirect_uri=${encodeURIComponent(`${bot.config.domain}${bot.config.port == 80 ? "" : `:${bot.config.port}`}/callback`)}`  %>" class="btn btn-primary">Invite Bot</a>
         <% } %>
       </div>
     </div>
