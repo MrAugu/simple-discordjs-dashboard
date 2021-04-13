@@ -27,5 +27,5 @@ You can join my discord server [here](https://discord.gg/rk7cVyk).
 
 
 
-*Is time for you to get creative..*
+*It's time for you to get creative..*
 
