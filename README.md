@@ -1,6 +1,6 @@
 # Discord Bot Dashboard
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 - ~~Is a very simple, no-css bot dashboard.~~
 - It has a lightweight design made with Bootstrap to be pleasant to the eye, the old design can be found in the `no-style` branch of the repository, if you are curious check that out but is still very simple!
@@ -43,6 +43,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Myst82015"><img src="https://avatars.githubusercontent.com/u/34489470?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Myst</b></sub></a><br /><a href="https://github.com/MrAugu/simple-discordjs-dashboard/commits?author=Myst82015" title="Code">💻</a> <a href="#content-Myst82015" title="Content">🖋</a> <a href="#ideas-Myst82015" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Myst82015" title="Maintenance">🚧</a> <a href="https://github.com/MrAugu/simple-discordjs-dashboard/pulls?q=is%3Apr+reviewed-by%3AMyst82015" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://discord.gg/Wwekc2QAzq"><img src="https://avatars.githubusercontent.com/u/39545629?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MrAugu</b></sub></a><br /><a href="https://github.com/MrAugu/simple-discordjs-dashboard/commits?author=MrAugu" title="Code">💻</a> <a href="#content-MrAugu" title="Content">🖋</a> <a href="#ideas-MrAugu" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-MrAugu" title="Maintenance">🚧</a> <a href="https://github.com/MrAugu/simple-discordjs-dashboard/pulls?q=is%3Apr+reviewed-by%3AMrAugu" title="Reviewed Pull Requests">👀</a> <a href="#design-MrAugu" title="Design">🎨</a> <a href="https://github.com/MrAugu/simple-discordjs-dashboard/issues?q=author%3AMrAugu" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
