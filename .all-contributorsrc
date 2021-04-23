@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Myst82015",
+      "name": "Myst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34489470?v=4",
+      "profile": "https://github.com/Myst82015",
+      "contributions": [
+        "code",
+        "content",
+        "ideas",
+        "maintenance",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "simple-discordjs-dashboard",
+  "projectOwner": "MrAugu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
