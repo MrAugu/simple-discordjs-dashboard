@@ -32,6 +32,17 @@
         "design",
         "bug"
       ]
+    },
+    {
+      "login": "Snowflake107",
+      "name": "MegaPixel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46562212?v=4",
+      "profile": "https://snowflake.is-a.dev",
+      "contributions": [
+        "code",
+        "design",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
