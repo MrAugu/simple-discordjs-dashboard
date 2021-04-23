@@ -17,6 +17,21 @@
         "maintenance",
         "review"
       ]
+    },
+    {
+      "login": "MrAugu",
+      "name": "MrAugu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39545629?v=4",
+      "profile": "https://discord.gg/Wwekc2QAzq",
+      "contributions": [
+        "code",
+        "content",
+        "ideas",
+        "maintenance",
+        "review",
+        "design",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
