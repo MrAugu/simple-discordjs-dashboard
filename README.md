@@ -1,4 +1,7 @@
 # Discord Bot Dashboard
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 - ~~Is a very simple, no-css bot dashboard.~~
 - It has a lightweight design made with Bootstrap to be pleasant to the eye, the old design can be found in the `no-style` branch of the repository, if you are curious check that out but is still very simple!
 - Made with Express, MongoDB, Discord.JS.
@@ -29,3 +32,23 @@ You can join my discord server [here](https://discord.gg/rk7cVyk).
 
 *It's time for you to get creative..*
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Myst82015"><img src="https://avatars.githubusercontent.com/u/34489470?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Myst</b></sub></a><br /><a href="https://github.com/MrAugu/simple-discordjs-dashboard/commits?author=Myst82015" title="Code">💻</a> <a href="#content-Myst82015" title="Content">🖋</a> <a href="#ideas-Myst82015" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-Myst82015" title="Maintenance">🚧</a> <a href="https://github.com/MrAugu/simple-discordjs-dashboard/pulls?q=is%3Apr+reviewed-by%3AMyst82015" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
