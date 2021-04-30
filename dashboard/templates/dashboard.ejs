@@ -7,6 +7,7 @@
   %>
 
     <div class="card" style="max-width: 18rem; margin: 2rem; min-width: 10em;">
+    <link rel="icon" href="https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}" type="image/x-icon">
     <%- guild.icon ? `<img src="https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}" class="card-img-top" style="max-width: 18rem;">` : "" %>
       <div class="card-body">
         <h5 class="card-title"><%= guild.name %></h5>
