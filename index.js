@@ -37,6 +37,8 @@ client.on("ready", async () => {
 
   console.log(`Bot is ready. (${client.guilds.cache.size} Guilds - ${client.channels.cache.size} Channels - ${client.users.cache.size} Users)`);
   Dashboard(client);
+  client.user.setActivity('My Dashboard',({
+  type: "WATCHING"}))
 });
 
 // We listen for message events.
@@ -69,7 +71,7 @@ client.on("message", async (message) => {
   // If command is ping we send a sample and then edit it with the latency.
   if (command === "ping") {
     const roundtripMessage = await reply("Pong!");
-    return roundtripMessage.edit(`*${roundtripMessage.createdTimestamp - message.createdTimestamp}ms*`);
+    return roundtripMessage.edit(`Pong!*${roundtripMessage.createdTimestamp - message.createdTimestamp}ms*`);
   }
 });
 
