@@ -3,6 +3,7 @@
 */
 // We import the modules.
 const Discord = require("discord.js");
+const fs = require("fs");
 const mongoose = require("mongoose");
 const config = require("./config");
 const GuildSettings = require("./models/settings");
