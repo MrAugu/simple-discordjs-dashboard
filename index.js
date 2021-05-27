@@ -73,6 +73,12 @@ client.on("message", async (message) => {
     const roundtripMessage = await reply("Pong!");
     return roundtripMessage.edit(`Pong!*${roundtripMessage.createdTimestamp - message.createdTimestamp}ms*`);
   }
+  if (command === "say"||command === "repeat"){
+    if (args.length > 0)
+          message.channel.send(args.join(' '));
+        else
+          message.reply('🚨|Provide a Message')
+      }
 });
 
 // Listening for error & warn events.
