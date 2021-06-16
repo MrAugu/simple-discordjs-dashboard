@@ -184,7 +184,7 @@ module.exports = async (client) => {
     if(!member){
       try{ await guild.members.fetch();
         member = guild.members.cache.get(req.user.id);
-      } catch{ console.error("Couldn't fetch the members of " + guild.id); }}
+      } catch (err) { console.error(`Couldn't fetch the members of ${guild.id}: ${err}`); }}
     if (!member) return res.redirect("/dashboard");
     if (!member.permissions.has("MANAGE_GUILD")) return res.redirect("/dashboard");
 
