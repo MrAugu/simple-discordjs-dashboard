@@ -37,6 +37,7 @@ client.on("ready", async () => {
 
   console.log(`Bot is ready. (${client.guilds.cache.size} Guilds - ${client.channels.cache.size} Channels - ${client.users.cache.size} Users)`);
   Dashboard(client);
+  client.user.setActivity('https://github.com/MrAugu/simple-discordjs-dashboard', ({ type: "WATCHING" }))
 });
 
 // We listen for message events.
