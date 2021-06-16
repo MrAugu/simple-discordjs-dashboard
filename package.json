@@ -4,6 +4,7 @@
   "description": "A simple discord bot dashboard which focuses on the dashboard itself.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "node index.js"
   },
   "repository": {
