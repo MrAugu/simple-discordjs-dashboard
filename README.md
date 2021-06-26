@@ -8,7 +8,7 @@
 
 ## Discord Server
 
-You can join my discord server [here](https://discord.gg/HNw53BJVaX).
+You can join my discord server [here](https://discord.gg/aP9UYfaFa4).
 
 ## Preview
 
