@@ -2,9 +2,6 @@
 
 <h2 align="center"> Simple Discord.JS Bot Dashboard </h2>
 
-<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
-
-
 <!-- BADGES -->
 <div align="center">
     <p>
@@ -17,6 +14,9 @@
     <img src="https://img.shields.io/github/repo-size/MrAugu/simple-discordjs-dashboard?color=%23f65b5b&labelColor=%23101415&style=for-the-badge">
   </p>
 </div>
+
+<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
+
 
 
 - ~~Is a very simple, no-css bot dashboard.~~
