@@ -1,10 +1,31 @@
-# Discord Bot Dashboard
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
+
+<h2 align="center"> Simple Discord Bot Dashboard </h2>
+
+<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
+
+
+<!-- BADGES -->
+<div align="center">
+    <p>
+    <a href="https://github.com/MrAugu/simple-discordjs-dashboard/stargazers">
+        <img src="https://img.shields.io/github/stars/ariadnabot/discord.js-event-cheatsheet?color=%238dc776&labelColor=%23101415&style=for-the-badge">
+    </a>
+    <a href="https://github.com/MrAugu/simple-discordjs-dashboard/network/members/">
+        <img src="https://img.shields.io/github/forks/MrAugu/simple-discordjs-dashboard?color=%2384a0c6&labelColor=%23101415&style=for-the-badge">
+    </a>
+    <img src="https://img.shields.io/github/repo-size/MrAugu/simple-discordjs-dashboard?color=%23f65b5b&labelColor=%23101415&style=for-the-badge">
+  </p>
+</div>
+
+
 - ~~Is a very simple, no-css bot dashboard.~~
 - It has a lightweight design made with Bootstrap to be pleasant to the eye, the old design can be found in the `no-style` branch of the repository, if you are curious check that out but is still very simple!
 - Made with Express, MongoDB, Discord.JS.
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Discord Server
 
