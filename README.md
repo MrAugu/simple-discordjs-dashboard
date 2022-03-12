@@ -6,7 +6,7 @@
 <div align="center">
     <p>
     <a href="https://github.com/MrAugu/simple-discordjs-dashboard/stargazers">
-        <img src="https://img.shields.io/github/stars/ariadnabot/discord.js-event-cheatsheet?color=%238dc776&labelColor=%23101415&style=for-the-badge">
+        <img src="https://img.shields.io/github/stars/MrAugu/simple-discordjs-dashboard?color=%238dc776&labelColor=%23101415&style=for-the-badge">
     </a>
     <a href="https://github.com/MrAugu/simple-discordjs-dashboard/network/members/">
         <img src="https://img.shields.io/github/forks/MrAugu/simple-discordjs-dashboard?color=%2384a0c6&labelColor=%23101415&style=for-the-badge">
