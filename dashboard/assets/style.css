@@ -3,3 +3,7 @@
   it is applied to every page of our application.
   Write some style to begin.
 */
+
+.img-placeholder {
+  background: url("putloadinggifhere.png")!important;
+}
