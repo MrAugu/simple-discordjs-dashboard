@@ -26,7 +26,7 @@
     "body-parser": "^1.19.0",
     "discord.js": "^13.1.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.2",
     "memorystore": "^1.6.6",
     "mongoose": "^5.13.7",
