@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "chalk": "^2.4.2",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.20",
     "string-width": "^4.2.2"
   }
 }
