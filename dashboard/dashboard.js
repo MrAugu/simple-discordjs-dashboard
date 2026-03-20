@@ -97,8 +97,8 @@ module.exports = async (client) => {
   app.use(
     session({
       store: new MemoryStore({ checkPeriod: 86400000 }),
-      secret:
-				"#@%#&^$^$%@$^$&%#$%@#$%$^%&$%^#$%@#$%#E%#%@$FEErfgr3g#%GT%536c53cc6%5%tv%4y4hrgrggrgrgf4n",
+      // Make sure to set SESSION_SECRET environment variable in production
+      secret: process.env.SESSION_SECRET || require('crypto').randomBytes(64).toString('hex'),
       resave: false,
       saveUninitialized: false,
     }),
@@ -183,9 +183,10 @@ module.exports = async (client) => {
       res,
     ) => {
       // If user had set a returning url, we redirect him there, otherwise we redirect him to index.
-      if (req.session.backURL) {
-        const backURL = req.session.backURL;
-        req.session.backURL = null;
+      // Validate redirect target to prevent open redirect to external sites
+      const backURL = req.session.backURL;
+      req.session.backURL = null;
+      if (backURL && backURL.startsWith('/') && !backURL.startsWith('//')) {
         res.redirect(backURL);
       } else {
         res.redirect("/");
