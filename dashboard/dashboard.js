@@ -6,6 +6,7 @@ const url = require("url");
 const ejs = require("ejs");
 const path = require("path");
 const chalk = require("chalk");
+const crypto = require("crypto");
 const express = require("express");
 const config = require("../config");
 const passport = require("passport");
@@ -97,8 +98,7 @@ module.exports = async (client) => {
   app.use(
     session({
       store: new MemoryStore({ checkPeriod: 86400000 }),
-      secret:
-				"#@%#&^$^$%@$^$&%#$%@#$%$^%&$%^#$%@#$%#E%#%@$FEErfgr3g#%GT%536c53cc6%5%tv%4y4hrgrggrgrgf4n",
+      secret: process.env.SESSION_SECRET || crypto.randomBytes(32).toString("hex"),
       resave: false,
       saveUninitialized: false,
     }),
