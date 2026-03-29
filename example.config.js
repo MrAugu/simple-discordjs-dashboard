@@ -10,6 +10,7 @@ module.exports = {
   mongodbUrl: "MONGO_URI", // MongoDB connection URL
   clientSecret: "CLIENT_SECRET", // Client Secret from Discord Application
   token: "CLIENT_TOKEN", // Bot Token from Discord Application
+  session_secret: "", // Session secret to protect sessions
 };
 
 /**

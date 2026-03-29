@@ -23,6 +23,16 @@
 - It has a lightweight design made with Bootstrap to be pleasant to the eye, the old design can be found in the `no-style` branch of the repository, if you are curious check that out but is still very simple!
 - Made with Express, MongoDB, Discord.JS.
 
+## Setup
+
+Fill out example.config.js with your respective values, then rename the file to config.js.
+
+Install all required dependencies.
+After that, you’re ready to go.
+
+⚠️ **Warning:** This dashboard uses an outdated version of discord.js (v13.1.0). Use it at your own risk — some features may no longer work, and you might need to apply patches or updates.
+
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->

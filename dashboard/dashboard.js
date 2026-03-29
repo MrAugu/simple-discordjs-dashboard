@@ -98,7 +98,7 @@ module.exports = async (client) => {
   app.use(
     session({
       store: new MemoryStore({ checkPeriod: 86400000 }),
-      secret: process.env.SESSION_SECRET || crypto.randomBytes(32).toString("hex"),
+      secret: config.session_secret || crypto.randomBytes(64).toString("hex"),
       resave: false,
       saveUninitialized: false,
     }),
